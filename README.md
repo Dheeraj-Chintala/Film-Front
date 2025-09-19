@@ -1,12 +1,9 @@
-# React + Vite
+# Movie Landing Page
+Film-Front is a responsive movie landing page built with React, Tailwind CSS, and Vite. It features a dynamic 3D poster carousel, and clean responsive design for both desktop and mobile. Perfect for showcasing a curated selection of movies with modern UI effects.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+### Screenshots
+| Web View | Mobile View|
+|----------|------------|
+| <img src="public/screenshots/Screenshot (225).png" height="400px"> | <img src="public/screenshots/Screenshot_2025-09-19-12-50-00-58_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" height="400px"> |
+| <img src="public/screenshots/Screenshot (226).png" height="400px"> | <img src="public/screenshots/Screenshot_2025-09-19-12-49-51-95_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" height="400px"> |
