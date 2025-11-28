@@ -16,6 +16,49 @@ Film-Front is a responsive movie landing page built with React, Tailwind CSS, an
 | <img src="public/screenshots/Screenshot (226).png" height="400px"> | <img src="public/screenshots/Screenshot_2025-09-19-12-49-51-95_40deb401b9ffe8e1df2f1cc5ba480b12.jpg" height="400px"> |
 
 ---
+
+## Archietecture
+
+```mermaid
+flowchart LR
+
+    subgraph Developer
+        A1[React Code]
+        A2[Push to GitHub]
+    end
+
+    subgraph GitHub
+        B1[Repository]
+        B2[GitHub Actions Pipeline]
+    end
+
+    subgraph Build
+        C1[Dockerfile: Node to Nginx]
+        C2[Build React App]
+        C3[Create Nginx Image]
+    end
+
+    subgraph DockerHub
+        D1[film-front:latest]
+    end
+
+    subgraph Live
+        E1[Nginx Container]
+        E2[Public URL]
+    end
+
+    A1 --> A2
+    A2 --> B1
+    B1 --> B2
+    B2 --> C1
+    C1 --> C2
+    C2 --> C3
+    C3 -->|Push Image| D1
+    D1 -->|Pull Image| E1
+    E1 --> E2
+
+```
+
 ##  Deployment
 
 This project is deployed in two ways:
