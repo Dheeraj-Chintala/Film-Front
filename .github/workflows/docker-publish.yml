@@ -5,8 +5,9 @@ on:
     branches: ["main"]
     
     paths-ignore:
-      - "README.md"
       - "**/*.md"
+      - "public/**"
+      - ".github/**"
       
   workflow_dispatch:
 
